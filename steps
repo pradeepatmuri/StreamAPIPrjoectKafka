@@ -1,0 +1,15 @@
+1. Refer to the code added under kafka.day4.t2.streamingapi.StreamingTest
+
+2. Now start zookeeper normally after clearing the temp directory then kafka server with normal properties
+
+3. Open a producer console producer using following command
+   kafka-console-producer.bat --broker-list localhost:9092 --topic src-topic
+
+4. Open a consumer console using following command
+   kafka-console-consumer.bat --topic out-topic --bootstrap-server localhost:9092
+   
+5. Now run the java program then pass the message in producer console
+
+6. Now we can the same message in upper case in consumer console.
+
+Note: This will only work as long as java streaming program is running/alive
